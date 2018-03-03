@@ -1,7 +1,18 @@
   # http://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
 a = [int(x) for x in input("Please enter a list of numbers: ").split()]
 b = [int(x) for x in input("Please enter another list of numbers: ").split()]
-
+fin = []
+if (len(a) >= len(b)):
+    for element in a:
+        if element in b:
+            if element not in fin:
+                fin.append(element)
+else:
+    for element in b:
+        if element in a:
+            if element not in fin:
+                fin.append(element)
+print(fin)
 
 '''
   # http://www.practicepython.org/exercise/2014/02/26/04-divisors.html
