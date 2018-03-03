@@ -1,6 +1,14 @@
+import random
+
   # http://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
 a = [int(x) for x in input("Please enter a list of numbers: ").split()]
 b = [int(x) for x in input("Please enter another list of numbers: ").split()]
+for i in range(random.randint(0,20)):
+    a.append(random.randint(0,100))
+print(a)
+for i in range(random.randint(0,20)):
+    b.append(random.randint(0,100))
+print(b)
 fin = []
 if (len(a) >= len(b)):
     for element in a:
