@@ -1,4 +1,10 @@
-  # http://www.practicepython.org/exercise/2014/02/26/04-divisors.htmlf
+  # http://www.practicepython.org/exercise/2014/03/05/05-list-overlap.html
+a = [int(x) for x in input("Please enter a list of numbers: ").split()]
+b = [int(x) for x in input("Please enter another list of numbers: ").split()]
+
+
+'''
+  # http://www.practicepython.org/exercise/2014/02/26/04-divisors.html
 uNum = int(input("What would you like to devise?  "))
 divisor = [];
 x = range(2,uNum)
@@ -8,6 +14,7 @@ for element in x:
         divisor.append(element)
 
 print("the divisors to your number are: "+str(divisor))
+'''
 
 '''
   # http://www.practicepython.org/exercise/2014/02/15/03-list-less-than-ten.html
